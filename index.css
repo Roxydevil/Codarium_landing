@@ -18,8 +18,24 @@ h1, h2, h3 {
     margin-bottom: 10px;
 }
 
+h3 {
+    font-size: 16px;
+}
+
 p {
     margin-bottom: 10px;
+    font-size: 14px;
+}
+hr {
+    width: 100%;
+}
+sup {
+    font-weight: 100;
+    font-size: 14px;
+}
+.specText {
+    font-size: 10px;
+    color: grey;
 }
 
 .i {
@@ -45,14 +61,12 @@ p {
     opacity: 0.7;
 }
 /*___________________________________________________________________*/
-
-
+/* Common____________________________________________________________*/
 .marginBlock {
     opacity: 1;
     width: 100%;
     height: 5vh;
 }
-
 .pageBody_top {
     width: 80%;
     height: 185vh;
@@ -62,13 +76,33 @@ p {
 }
 .pageBody_bottom {
     width: 80%;
-    height: 185vh;
+    min-height: 500vh;
     margin: 0 auto;
     background-color: white;
     border-radius: 0 0 5px 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 60px;
+}
+.textBlock {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.smallIcon {
+    width: 40px;
+    height: 40px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-/* Header_____________________________________________________ */
+
+/*_________________________________________________________________*/
+/* Header_________________________________________________________ */
 .navbar {
     display: flex;
     flex-direction: column;
@@ -161,7 +195,6 @@ p {
     width: 100%;
 }
 .screen_2 div:nth-child(1) {
-    text-align: center;
     height: 30%;
 }
 .screen_2 div:nth-child(2) {
@@ -219,13 +252,6 @@ p {
     color: white;
     font-size: 30px;
 }
-.smallIcon {
-    width: 40px;
-    height: 40px;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 .screen_3__card__icon-1 {
     background-image: url(icons/team.png);
 }
@@ -239,31 +265,406 @@ p {
     background-image: url(icons/rocket-ship.png);
 }
 
+/*___________________________________________________________*/
+/*Screen-4___________________________________________________*/
+.screen_4 {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.screen_4 > div:nth-child(1) {
+    height: 20%;
+}
+.smallIconBlock {
+    width: 100%;
+    height: 36%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+.smallIconBlock .screen_4__card {
+    width: 25%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+.screen_4__card__icon-1 {
+    background-image: url(icons/i_1.png);
+}
+.screen_4__card__icon-2 {
+    background-image: url(icons/i_2.png);
+}
+.screen_4__card__icon-3 {
+    background-image: url(icons/i_3.png);
+}
+.screen_4__card__icon-4 {
+    background-image: url(icons/i_4.png);
+}
+.screen_4__card__icon-5 {
+    background-image: url(icons/i_5.png);
+}
+.screen_4__card__icon-6 {
+    background-image: url(icons/i_6.png);
+}
+/*_______________________________________________________________*/
+/* Screen-5______________________________________________________*/
+.screen_5 {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+.screenBlock {
+    width: 60%;
+    height: 45vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+.screen_5 .screenBlock:last-child {
+    height: 25vh;
+}
+.screenBlock__text {
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    padding: 0 5px 0 5px;
+}
+.screenBlock__screen {
+    width: 25vh;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.screenBlock__screen_1 {
+    background-image: url(img/app-profile-mockup.png);
+}
+.screenBlock__screen_2 {
+    background-image: url(img/app-chat-mockup.png);
+}
+.screenBlock__text__icon-1 {
+    background-image: url(icons/camera.png);
+    margin-bottom: 20px;
+}
+.screenBlock__text__icon-2 {
+    background-image: url(icons/speech-bubble.png);
+    margin-bottom: 20px;
+}
+.appBlock {
+    width: 25vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+.appBlock__app {
+    width: 120px;
+    height: 40px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.app_1 {
+    background-image: url(img/appstore-btn.png);
+}
+.app_2 {
+    background-image: url(img/playstore-btn.png);
+}
+/*_______________________________________________________________*/
+/* Screen-6_Screen-8_____________________________________________*/
+.screen_6_8 {
+    height: 80vh;
+    background-color: #ededed;
+    margin: 0px -20px -50px -20px;
+    padding: 50px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+.cartBlock {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.cart {
+    width: 200px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    background-color: white;
+}
+/*_______________________________________________________________*/
+/* Screen-6______________________________________________________*/
+.screen_6__cart__img {
+    width: 100%;
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.screen_6__cart__img_1 {
+    background-image: url(img/blog-1.jpg);
+}
+.screen_6__cart__img_2 {
+    background-image: url(img/blog-2.jpg);
+}
+.screen_6__cart__img_3 {
+    background-image: url(img/blog-3.jpg);
+}
+.screen_6__cart__text {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    align-items: flex-start;
+}
+.screen_6__cart__text a {
+    color: crimson;
+    font-size: 10px;
+    margin-top: 10px;
+}
+.screen_6__cart__text * {
+    margin-left: 5px;
+}
+/*_______________________________________________________________*/
+/* Screen-7______________________________________________________*/
+.screen_7 {
+    margin-top: 80px;
+    width: 100%;
+    min-height: 80vh;
+}
+.container {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#myBtnContainer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.filterDiv {
+    width: 30%;
+    height: 30vw;
+    text-align: center;
+    margin: 5px 0 5px 0;
+    display: none; /* Hidden by default */
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+/* Style the buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    cursor: pointer;
+    color: crimson;
+    background-color: transparent;
+}
+/* Add a light grey background on mouse-over */
+.btn:hover {
+    
+}
+/* Add a dark background to the active button */
+.btn.active {
 
+}
+/*Хранилище картинок*/
+.filterDiv_1 {
+    background-image: url(img/photo-1.jpg);
+}
+.filterDiv_2 {
+    background-image: url(img/photo-2.jpg);
+}
+.filterDiv_3 {
+    background-image: url(img/photo-3.jpg);
+}
+.filterDiv_4 {
+    background-image: url(img/photo-4.jpg);
+}
+.filterDiv_5 {
+    background-image: url(img/photo-5.jpg);
+}
+.filterDiv_6 {
+    background-image: url(img/photo-6.jpg);
+}
+.filterDiv_7 {
+    background-image: url(img/photo-7.jpg);
+}
+.filterDiv_8 {
+    background-image: url(img/photo-8.jpg);
+}
+.filterDiv_9 {
+    background-image: url(img/photo-9.jpg);
+}
+.filterDiv_10 {
+    background-image: url(img/photo-10.jpg);
+}
+/*_______________________________________________________________*/
+/* Screen-8______________________________________________________*/
+.rate {
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 900;
+}
+.cartBlock .cart:nth-child(1) .rate {
+    color: darkorange;
+}
+.cartBlock .cart:nth-child(2) .rate {
+    color: lightseagreen;
+}
+.cartBlock .cart:nth-child(3) .rate {
+    color: crimson;
+}
+.cart p:nth-child(2), .price {
+    font-size: 28px;
+    font-weight: 900;
+    color: black;
+}
+ul {
+    margin-top: 10px;
+    font-size: 10px;
+    list-style: none;
+    text-align: center;
+}
+li {
+    margin-bottom: 2px;
+}
+.buyButton {
+    width: 90%;
+    height: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.buyButton__text {
+    text-align: center;
+    color: white;
+}
+.cartBlock .cart:nth-child(1) .buyButton {
+    background-color: darkorange;
+}
 
+.cartBlock .cart:nth-child(2) .buyButton {
+    background-color: lightseagreen;
+}
 
+.cartBlock .cart:nth-child(3) .buyButton {
+    background-color: crimson;
+}
+/*_______________________________________________________________*/
+/* Screen-9______________________________________________________*/
+.screen_9 {
+    margin-top: 80px;
+}
+.companies {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+.comp {
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.comp_1 {
+    background-image: url(img/client-1.png);
+}
 
+.comp_2 {
+    background-image: url(img/client-2.png);
+}
 
+.comp_3 {
+    background-image: url(img/client-3.png);
+}
 
+.comp_4 {
+    background-image: url(img/client-4.png);
+}
 
+.comp_5 {
+    background-image: url(img/client-5.png);
+}
 
-
-
-
-
-
-
-
+.comp_6 {
+    background-image: url(img/client-6.png);
+}
 
 
 
 @media screen and (max-width: 768px) {
+    /* Common______________________________________________________*/
     .pageBody_top {
         width: 90%;
         height: 270vh;
     }
     .pageBody_bottom {
         width: 90%;
+        min-height: 785vh;
+        padding-bottom: 60px;
+    }
+    p {
+        font-size: 12px;
     }
 
     /* Header_____________________________________________________ */
@@ -296,6 +697,47 @@ p {
         width: 50%;
         margin: 20px auto;
     }
+
+    /*Screen-4_____________________________________________________*/
+    .screen_4 {
+        height: 190vh;
+    }
+    .smallIconBlock {
+        flex-direction: column;
+    }
+    .smallIconBlock .screen_4__card {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    /*Screen-5_____________________________________________________*/
+    .screenBlock {
+        width: 100%;
+    }
+
+    /* Screen-6_Screen-8___________________________________________*/
+    .screen_6_8 {
+        height: 180vh;
+        padding-top: 80px;
+    }
+    .cartBlock {
+        height: 150vh;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .cart {
+        margin-bottom: 20px;
+    }
+
+    /*Screen-7_____________________________________________________*/
+    .screen_7 {
+        min-height: 50vh;
+    }
+    .btn {
+        padding: 12px 6px;
+        font-size: 10px;
+    }
+
 }
 
 
